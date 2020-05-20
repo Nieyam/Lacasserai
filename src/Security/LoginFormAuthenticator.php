@@ -91,7 +91,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         }
 
         // For example : return new RedirectResponse($this->urlGenerator->generate('some_route'));
-        throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
+        // throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
     }
 
     protected function getLoginUrl()
@@ -99,13 +99,4 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         return $this->urlGenerator->generate(self::LOGIN_ROUTE);
     }
 
-    /**
-     * Returns the clear-text password contained in credentials if any.
-     *
-     * @param mixed $credentials The user credentials
-     */
-    public function getPassword($credentials): ?string
-    {
-        // TODO: Implement getPassword() method.
-    }
 }
