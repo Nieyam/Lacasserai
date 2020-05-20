@@ -99,4 +99,13 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         return $this->urlGenerator->generate(self::LOGIN_ROUTE);
     }
 
+    /**
+     * Returns the clear-text password contained in credentials if any.
+     *
+     * @param mixed $credentials The user credentials
+     */
+    public function getPassword($credentials): ?string
+    {
+        // TODO: Implement getPassword() method.
+    }
 }
